@@ -15,17 +15,17 @@ userGenerate -m Army$i
 userGenerate -m Navy$i
 userGenerate -m AirForce$i
 sudo groupadd AirForceL$i
-sudo groupadd NavyL$i
-sudo groupadd ArmyL$i
-sudo usermod -a -G AirForceL$i ChiefCommander
-sudo usermod -a -G AirForceL$i AirForceChief
-sudo usermod -a -G AirForceL$i ashivn
-sudo usermod -a -G NavyL$i ChiefCommander
-sudo usermod -a -G NavyL$i NavyMarshal
-sudo usermod -a -G NavyL$i ashvin
-sudo usermod -a -G ArmyL$i ChiefCommander
-sudo usermod -a -G ArmyL$i ArmyGeneral
-sudo usermod -a -G ArmyL$i ashivn
+sudo groupadd Navy$i
+sudo groupadd Army$i
+sudo usermod -a -G AirForce$i ChiefCommander
+sudo usermod -a -G AirForce$i AirForceChief
+sudo usermod -a -G AirForce$i ashivn
+sudo usermod -a -G Navy$i ChiefCommander
+sudo usermod -a -G Navy$i NavyMarshal
+sudo usermod -a -G Navy$i ashvin
+sudo usermod -a -G Army$i ChiefCommander
+sudo usermod -a -G Army$i ArmyGeneral
+sudo usermod -a -G Army$i ashivn
 i=$(($i+1))
 done
 sudo chgrp own /home/ArmyGeneral
