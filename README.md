@@ -14,7 +14,7 @@ do
 userGenerate -m Army$i
 userGenerate -m Navy$i
 userGenerate -m AirForce$i
-sudo groupadd AirForceL$i
+sudo groupadd AirForce$i
 sudo groupadd Navy$i
 sudo groupadd Army$i
 sudo usermod -a -G AirForce$i ChiefCommander
